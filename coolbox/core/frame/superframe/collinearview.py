@@ -119,8 +119,10 @@ class CoLinearView(SuperFrame):
         self.goto(gr1, gr2)
         gr1, gr2 = self.current_range
         return {
-            'top':(gr1,gr1),
-            'bottom':(gr2,gr2),
+            #'top':(gr1,gr1),
+            #'bottom':(gr2,gr2),
+            'top':(gr1,None),
+            'bottom':(gr2,None),
         }
 
     def plot(self, gr1=None, gr2=None):
